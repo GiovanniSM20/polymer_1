@@ -8,12 +8,16 @@
   </style>
 
   <template>
-    <h1> Hello World </h1>
+    <h1> Hello World {{name}}</h1>
   </template>
 
   <script>
     Polymer({
-      is: 'hello-world'
+      is: 'hello-world',
+      properties: {
+        type: String,
+        value: "value set by default."
+      }
     })
   </script>
 </dom-module>
