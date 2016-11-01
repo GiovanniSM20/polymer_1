@@ -1,0 +1,20 @@
+{
+  "name": "polymer_1",
+  "authors": [
+    "Giovanni de Sousa Martins <giovannimartins2000@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "polymer/polymer#^1.7.0"
+  }
+}
