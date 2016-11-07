@@ -8,16 +8,30 @@
   </style>
 
   <template>
-    <h1> Hello World {{name}}</h1>
+    <h1 on-tap="write"> Hello World {{name}}</h1>
+    <h2 id="youtube">"youtube"</h2>
   </template>
 
   <script>
     Polymer({
       is: 'hello-world',
       properties: {
-        type: String,
-        value: "value set by default."
+        name: {
+          type: String,
+          value: "value set by default."
+        }
+      },
+      listeners : {
+        'tap': 'write',
+        'youtube.tap': 'writeSpecial'
+      },
+      write: function() {
+        console.log('done')
+      },
+      writeSpecial: function() {
+        console.log('Special')
       }
-    })
+    });
   </script>
+
 </dom-module>
